@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/style/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Orbitron&family=Yusei+Magic&display=swap" rel="stylesheet">
+  <script src="/scripts/script.js"></script>
+  <title>Home | Honor</title>
+</head> 
+
+<body>
+
+  <header>
+    <nav>
+      <div id="menu_icon" onclick="openNav()"><img src="/img/menu.png" alt="menu"></div>    
+      <div id="honor"><h1>honor</h1></div>
+      <div id="menu_a">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Smartphone</li></a>
+          <a href="#"><li>Store</li></a>
+          <a href="#"><div><li>Buy Now</li></div></a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div id="description">
+        <h1>Smartwatch</h1>
+        <h4>ELEMENT SERIE</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel doloribus iusto sed beatae porro.</p>
+      </div>
+    
+      <div id="smartwatch">
+        <div class="mySlides fade">
+          <img src="/img/SW/white.png" alt="Smartwatch blanco" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/img/SW/black.png" alt="Smartwatch negro" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/img/SW/grey.png" alt="Smartwatch gris" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
+        <a class="next" onclick="plusSlides(1);">&#10095;</a>
+      </div>
+    
+      <div id="galery">
+        <div class="column">
+          <span>
+            <h2>White</h2>
+            <p>Element</p>
+          </span>
+          <img class="cursor" src="/img/SW/white.png" style="width:100%" onclick="currentSlide(1);" alt="Smartwatch blanco">
+        </div>
+        <div class="column">
+          <span>
+            <h2>Dark</h2>
+            <p>Element</p>
+          </span>
+          <img class="cursor" src="/img/SW/black.png" style="width:100%" onclick="currentSlide(2);" alt="Smartwatch negro">
+        </div>
+        <div class="column">
+          <span>
+            <h2>Grey</h2>
+            <p>Element</p>
+          </span>  
+          <img class="cursor" src="/img/SW/grey.png" style="width:100%" onclick="currentSlide(3);" alt="Smartwatch gris">
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
