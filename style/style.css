@@ -1,0 +1,215 @@
+/* Color Palette:
+Rosa: #F29494
+Azul: #08162B
+
+Fuentes:
+font-family: 'Montserrat', sans-serif; (Lorem + ELEMENTS)
+font-family: 'Orbitron', sans-serif; (honor)
+font-family: 'Yusei Magic', sans-serif; (Smartwatch)
+*/
+
+html{scroll-behavior: smooth;}
+
+*{box-sizing: border-box;}
+
+body{
+    background-color: #08162B;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+header{
+    height: 10vh;
+    width: 90%;
+    color: white;
+    margin: 1vh auto 10vh;
+}
+
+nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#menu_icon{
+    padding-top: 3vh;
+    height: 40px;
+    width: 40px;
+}
+
+#menu_icon img{
+    box-sizing: border-box;
+    height: inherit;
+    width: inherit;
+}
+
+#honor{
+    height: inherit;
+    width: 20%;
+    margin-right: -40vw;
+}
+
+#honor h1{
+    font-weight: 200;
+    font-size: 4vw;
+    margin-top: 2vh;
+}
+
+#menu_a{
+    width: 35%;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+nav ul li{
+    padding: 2vh;
+    list-style-type: none;
+}
+
+nav div h1{
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav ul div li{
+    text-align: center;
+    background-color: #F29494;
+    white-space: nowrap;
+}
+
+main section:first-child{
+    padding-top: 5vh; 
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: center;
+}
+
+#description{
+    width: 35%;
+    height: 30%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+#description h1{
+    letter-spacing: 0.1em;
+    font-size: 3.5em;
+    font-weight: bolder;
+    margin: 0;
+}
+
+#description h4{
+    color: #F29494;
+    font-family: 'Yusei Magic', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5em;
+    font-size: 1.5em;
+    margin: -1vh auto 1vh;
+}
+
+#smartwatch{
+    right: 0;
+    margin-left: 2vw;
+    position: relative;
+    width: 40%;
+    height: 90%;
+}
+
+#galery{
+    margin-top: 1vh;
+    width: 40%;
+    height: 55%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+}
+
+.mySlides:nth-child(2), .mySlides:nth-child(3){
+    display: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+aside:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    width: 30%;
+    background: rgba(236, 236, 236, 0.137);
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.column span{
+    text-align: center;
+    color: white;
+}
+
+.column span h2{
+    font-family: 'Yusei Magic', sans-serif;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.column span p{
+    margin-top: -5px;
+    margin-right: -50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+  
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
