@@ -28,10 +28,36 @@
 
   <main>
     <section>
-      <div id="description">
-        <h1>Smartwatch</h1>
-        <h4>ELEMENT SERIE</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel doloribus iusto sed beatae porro.</p>
+      <div id="left">
+        <div id="description">
+          <h1>Smartwatch</h1>
+          <h4>ELEMENT SERIE</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel doloribus iusto sed beatae porro.</p>
+        </div>
+
+        <div id="galery">
+          <div class="column">
+            <span>
+              <h2>White</h2>
+              <p>Element</p>
+            </span>
+            <img class="cursor" src="/img/SW/white.png" style="width:100%" onclick="currentSlide(1);" alt="Smartwatch blanco">
+          </div>
+          <div class="column">
+            <span>
+              <h2>Dark</h2>
+              <p>Element</p>
+            </span>
+            <img class="cursor" src="/img/SW/black.png" style="width:100%" onclick="currentSlide(2);" alt="Smartwatch negro">
+          </div>
+          <div class="column">
+            <span>
+              <h2>Grey</h2>
+              <p>Element</p>
+            </span>  
+            <img class="cursor" src="/img/SW/grey.png" style="width:100%" onclick="currentSlide(3);" alt="Smartwatch gris">
+          </div>
+        </div>
       </div>
     
       <div id="smartwatch">
@@ -45,33 +71,9 @@
           <img src="/img/SW/grey.png" alt="Smartwatch gris" style="width:100%">
         </div>
 
-        <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
         <a class="next" onclick="plusSlides(1);">&#10095;</a>
       </div>
     
-      <div id="galery">
-        <div class="column">
-          <span>
-            <h2>White</h2>
-            <p>Element</p>
-          </span>
-          <img class="cursor" src="/img/SW/white.png" style="width:100%" onclick="currentSlide(1);" alt="Smartwatch blanco">
-        </div>
-        <div class="column">
-          <span>
-            <h2>Dark</h2>
-            <p>Element</p>
-          </span>
-          <img class="cursor" src="/img/SW/black.png" style="width:100%" onclick="currentSlide(2);" alt="Smartwatch negro">
-        </div>
-        <div class="column">
-          <span>
-            <h2>Grey</h2>
-            <p>Element</p>
-          </span>  
-          <img class="cursor" src="/img/SW/grey.png" style="width:100%" onclick="currentSlide(3);" alt="Smartwatch gris">
-        </div>
-      </div>
     </section>
   </main>
 
