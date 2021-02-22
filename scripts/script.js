@@ -1,7 +1,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Controla el paso de img (next y prev)
+// Controla el paso de img (next)
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
